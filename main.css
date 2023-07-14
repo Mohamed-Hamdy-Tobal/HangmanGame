@@ -284,6 +284,11 @@ hr {
     display: flex;
     justify-content: center;
     gap: 10px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
 }
 
 .letter-guess span {
@@ -402,9 +407,10 @@ hr {
 .divhint {
     position: fixed;
     left: 63%;
-    top: 4%;
+    top: 6%;
 }
 
 
-
-
+.finishGuess {
+    gap: 0;
+}
