@@ -1,0 +1,40 @@
+{
+    "programming" : [
+        "php", 
+        "javascript", 
+        "python", 
+        "go", 
+        "mysql", 
+        "scala", 
+        "haskell"
+    ],
+    "movies": [
+        "Interstellar", 
+        "Inception", 
+        "Up", 
+        "Coco", 
+        "Avatar", 
+        "Thor", 
+        "Avengers", 
+        "Deadpool", 
+        "Shawshank", 
+        "Viking", 
+        "Prestige"
+    ],
+    "people": [
+        "Albert Einstein", 
+        "Mark Zuckerberg", 
+        "Mohamed Salah", 
+        "Cleopatra", 
+        "Messi", 
+        "Ronaldo"
+    ],
+    "countries": [
+        "Egypt", 
+        "Italy", 
+        "China", 
+        "Palestine", 
+        "Luxembourg", 
+        "Uzbekistan"
+    ]
+}

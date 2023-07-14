@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Hangman Game</title>
+  </head>
+  <body>
+
+    <!-- The Full Container For The Game -->
+    <div class="container">
+
+      <!-- The Information Of The Game -->
+      <div class="game-info">
+        <div class="game-name">Hangman</div>    <!-- The Name Of The Game -->
+        <div class="category">                  <!-- The Category Of The Game Like : Science, Programming, Geography -->
+          <!-- Word For : <span></span> -->
+        </div>
+      </div>
+
+
+      <!-- The Division Of The Game -->
+      <div class="row">
+        <!-- The Container OF Hangman Draw -->
+        <div class="hangman-draw">
+          <div class="the-draw">
+            <div class="the-stand"></div>         <!-- The Stand That The Man Is Hang On It -->
+            <div class="the-hang"></div>      <!-- The Hang Part -->
+            <div class="the-rope"></div>      <!-- The Rope Itself -->
+            <div class="the-man">
+              <div class="head"></div>
+              <div class="body"></div>
+              <div class="hands"></div>
+              <div class="legs"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- The Container Of English Letters -->
+        <div class="letters">
+
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- The Letters Guess -->
+      <div class="letter-guess">
+
+      </div>
+
+    </div>
+
+    <audio id="success" src="audio/success.mp3" preload="auto"></audio>
+    <audio id="fail" src="audio/fail.m4a" preload="auto"></audio>
+    <audio id="gameover" src="audio/game-video-game-show-fail-losing-sound-3-SBA-300457969-preview_[cut_1sec].wav" preload="auto"></audio>
+    <audio id="win" src="audio/win.wav" preload="auto"></audio>
+    <script src="main.js"></script>
+  </body>
+</html>
