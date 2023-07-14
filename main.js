@@ -7,6 +7,9 @@ let lettersArr = Array.from(letters)
 // Select The Letters Container
 let lettersContainer = document.querySelector(".letters")
 
+let letterGuess = document.querySelector(".letter-guess")
+let letterGuessSpan = document.querySelector(".letter-guess span")
+
 // Generate Letters
 lettersArr.forEach(myLetters => {
 
@@ -137,6 +140,12 @@ myRequest.onreadystatechange = function () {
                             if (count == 0) {
                                 endWin()
                                 lettersContainer.classList.add("finished")
+                                letterGuess.classList.add("finishGuess")
+                                myGuessSPan.forEach((theSpan) => {
+                                    theSpan.style.cssText = "color:#fff; background-color:#F44336;"
+
+                                })
+                                
                                 document.getElementById("win").play()
                             }
                         })
@@ -249,20 +258,56 @@ myRequest.onreadystatechange = function () {
             // Append To Body
             mainContainer.appendChild(div)
 
-            // Append The Word
-            let finalWord = document.createElement("span")
-            finalWord.className = "finalWord"
-            let textWord = document.createTextNode(randomValueValue)
-            finalWord.appendChild(textWord)
-            mainContainer.appendChild(finalWord)
+           // Create button try
+            let tryAgain = document.createElement("span")
 
-            setInterval(function() {
-                div.innerHTML += "."
-            }, 1000)
-            setTimeout(function() {
-                location.reload()
-            }, 5000)
+            let textTry = document.createTextNode(`Try Again?`)
+
+            tryAgain.appendChild(textTry)
+
+            tryAgain.className = "try"
+            
+            tryAgain.addEventListener("click", function() {
+                setTimeout(function() {
+                    location.reload()
+                }, 2000)
+            })
+
+
+            // Create button cancel
+            let cancel = document.createElement("span")
+
+            let textCancel = document.createTextNode(`Cancel`)
+
+            cancel.appendChild(textCancel)
+
+            cancel.className = "cancel"
+
+                
+            cancel.addEventListener("click", function() {
+                setTimeout(function() {
+                    window.close()
+                }, 2000)
+            })
+
+            // Create Box Of Two Child 
+            let divEnd = document.createElement("div")
+
+            divEnd.appendChild(tryAgain)
+            divEnd.appendChild(cancel)
+            divEnd.className = "boxEnd"
+
+            // Append To Body
+            mainContainer.appendChild(divEnd)
+
+            // setInterval(function() {
+            //     div.innerHTML += "."
+            // }, 1000)
+            // setTimeout(function() {
+            //     location.reload()
+            // }, 5000)
         }
 
     }
 };
+
