@@ -9,3 +9,6 @@ This code is an HTML, CSS, and JavaScript implementation of the Hangman game. Th
 - **JavaScript**: The JavaScript code handles the game logic. It starts by generating the letter buttons dynamically based on the alphabet. It then retrieves a random word from a JSON file that contains word categories. The chosen word is displayed as blank spaces, and the player can click on the letter buttons to guess the letters. If the guessed letter is correct, it fills in the corresponding blank spaces. If the guessed letter is incorrect, it increments the wrong attempt count and displays the hangman drawing accordingly. The game ends when the player either guesses the word correctly or makes too many wrong attempts. Pop-up messages are displayed at the end of the game to indicate whether the player won or lost.
 
 - **JSON Data**: The code includes a JSON file named "categories.json" that contains word categories and their corresponding words. Each category has an array of words associated with it.
+
+
+## Live URL : https://mohamed-hamdy-tobal.github.io/HangmanGame/
